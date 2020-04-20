@@ -1,7 +1,7 @@
 # main links links
 main:
   - title: "Projects"
-    url: /projects/
+    url: /portfolio/
 
   - title: "Blog Posts"
     url: /year-archive/
@@ -9,17 +9,14 @@ main:
   - title: "Slides"
     url: /slides/
 
-  - title: "Publications"
-    url: /publications/
+  # - title: "Publications"
+  #   url: /publications/
 
   # - title: "Talks"
   #   url: /talks/
 
   # - title: "Teaching"
-  #   url: /teaching/    
-
-  # - title: "Portfolio"
-  #   url: /portfolio/
+  #   url: /teaching/
 
   - title: "CV"
     url: /cv/
