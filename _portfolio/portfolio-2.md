@@ -1,6 +1,6 @@
 ---
 title: "Deep Q-learning for Sokoban Game"
-excerpt: "<img src='/images/sokoban.gif'></img>"
+excerpt: "<img src='/images/sokoban.gif'>"
 collection: portfolio
 ---
 
