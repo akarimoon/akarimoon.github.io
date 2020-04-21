@@ -7,7 +7,7 @@ collection: portfolio
 Codes are not yet made public.
 
 ## About the project
-This aim of this project was to interpolate frames in the video by only using optical flow calculated from frames right before and right after the target frame. I did not use any DL methods because of lack of computational resources and time.
+The aim of this project was to interpolate frames in the video by only using optical flow calculated from frames right before and right after the target frame. I did not use any DL methods because of lack of computational resources and time.
 
 ## Method
 The entire algorithm is described in the figure below.
