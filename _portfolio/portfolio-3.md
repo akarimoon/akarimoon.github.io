@@ -1,7 +1,8 @@
 ---
 title: "Video Interpolation using Optical Flow"
 excerpt: "<img src='/images/of1.gif'>"
-collection: portfolio
+permalink: /projects/video_interpolation_using_of
+collection: projects
 ---
 
 Codes are not yet made public.
@@ -25,7 +26,8 @@ Finally, the pixels are estimated and is added with the background image to gene
 ## Result
 The input video was first thinned out so that the frame rate was 1/4 of the original video.
 
-<img src='/images/of1.gif'>
+<img src='/images/of2.gif'>
+<!-- <video src='/images/comparison_2 copy.mp4'> -->
 
 The result above is when 3 frames were generated between the original 2 frames. On the left is the original video and the right one is the generated video.
 

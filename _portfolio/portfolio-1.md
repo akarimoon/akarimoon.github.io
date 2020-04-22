@@ -1,7 +1,8 @@
 ---
 title: "Building ML models from scratch"
 excerpt: "Implementations of some ML algorithms with only numpy and scipy"
-collection: portfolio
+permalink: /projects/building_ml_models_from_scratch
+collection: projects
 ---
 
 [Codes](https://github.com/akarimoon/simple-nn)

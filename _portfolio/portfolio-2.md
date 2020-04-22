@@ -1,7 +1,8 @@
 ---
 title: "Deep Q-learning for Sokoban Game"
 excerpt: "<img src='/images/sokoban.gif'>"
-collection: portfolio
+permalink: /projects/dqn_for_sokoban_game
+collection: projects
 ---
 
 [Codes](https://github.com/akarimoon/dqn-for-sokoban)
