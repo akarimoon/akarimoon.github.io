@@ -6,8 +6,8 @@ main:
   - title: "Blog Posts"
     url: /posts/
 
-  - title: "Slides"
-    url: /slides/
+  # - title: "Slides"
+  #   url: /slides/
 
   - title: "Publications"
     url: /publications/
