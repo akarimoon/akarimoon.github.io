@@ -12,7 +12,9 @@ redirect_from:
 Education
 ======
 * Joined UC Berkeley Summer Sessions, 2019
-* Senior student at the University of Tokyo, Department of Systems Innovations, (expected 2021)
+* GLP-GEfIL (Global Leadership Program) Alumni (4期生)
+* Senior student at Department of Systems Innovations, The University of Tokyo (expected 2021 Mar). Supervisor: Dr. K. Demachi.
+* Will be a pursuing master's degree at the Department of Technology Management for Innovation, Graduate School of Engineering, The University of Tokyo (from 2021 Apr). Supervisor: Dr. Y. Matsuo.
 
 Work experience
 ======
@@ -23,12 +25,13 @@ Work experience
     * Filing Date: 2019/03/29
     * Application Number: 特願2019-66616
 
-* 2019.08 - Present, Aidemy Inc.
+* 2019.08 - 2021.03, Aidemy Inc.
   * Working as a part-time tutor
-  * Duties included: Solving users' issues with their codes, giving advices, etc.
+  * Duties included: Solving users' issues with their codes, giving advices, translating courses to English, etc.
 
 * 2020.03 - Present: pluszero Inc.
   * Working as a part-time engineer
+  * Duties included: Natural language processing
 
 Skills
 ======
