@@ -1,0 +1,21 @@
+{% comment %}
+  Renders _data/publications.yml grouped by section.
+  Params: heading (default "h2") — tag used for section titles.
+{% endcomment %}
+{% assign heading = include.heading | default: "h2" %}
+{% for group in site.data.publications %}
+<{{ heading }} class="pub-section">{{ group.section }}</{{ heading }}>
+<ul class="pub-list">
+  {% for pub in group.items %}
+  <li class="pub-item">
+    <span class="pub-title">{{ pub.title }}</span><br>
+    <span class="pub-authors">{{ pub.authors | markdownify | remove: "<p>" | remove: "</p>" | strip }}</span><br>
+    <span class="pub-venue"><em>{{ pub.venue }}</em>, {{ pub.year }}</span>
+    {% if pub.links %}
+      {% for link in pub.links %}<a class="pub-link" href="{{ link.url }}">[{{ link.name }}]</a> {% endfor %}
+    {% endif %}
+    {% if pub.note %}<br><small>{{ pub.note | markdownify | remove: "<p>" | remove: "</p>" | strip }}</small>{% endif %}
+  </li>
+  {% endfor %}
+</ul>
+{% endfor %}

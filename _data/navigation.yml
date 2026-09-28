@@ -1,10 +1,11 @@
 # main links links
 main:
-  - title: "Projects"
-    url: /projects/
+  # Archived: projects and blog posts now live in _archive/ and are not built.
+  # - title: "Projects"
+  #   url: /projects/
 
-  - title: "Blog Posts"
-    url: /posts/
+  # - title: "Blog Posts"
+  #   url: /posts/
 
   # - title: "Slides"
   #   url: /slides/

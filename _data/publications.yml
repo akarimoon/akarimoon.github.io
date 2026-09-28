@@ -1,0 +1,115 @@
+# Publication list shown on /publications/ and /cv/.
+# Sources: Google Scholar (https://scholar.google.com/citations?user=RyIUFfkAAAAJ)
+# and CV (July 2026). Authors use markdown; "*" after a name marks equal contribution.
+
+- section: "International Conferences / Journals"
+  items:
+    - title: "Efficient Object-Centric Representation Learning using Masked Generative Modeling"
+      authors: "**Akihiro Nakano**, Masahiro Suzuki, Yutaka Matsuo"
+      venue: "Transactions on Machine Learning Research (TMLR)"
+      year: 2025
+      links:
+        - name: "OpenReview"
+          url: "https://openreview.net/forum?id=t9KvOYPeL3"
+    - title: "Interaction-Based Disentanglement of Entities for Object-Centric World Models"
+      authors: "**Akihiro Nakano**, Masahiro Suzuki, Yutaka Matsuo"
+      venue: "International Conference on Learning Representations (ICLR)"
+      year: 2023
+      links:
+        - name: "PDF"
+          url: "https://openreview.net/pdf?id=JQc2VowqCzz"
+
+- section: "Workshop Papers"
+  items:
+    - title: "An Investigation on Effectiveness of Object-Centric Representations for General Control Tasks"
+      authors: "**Akihiro Nakano**, Stefano Ferraro, Masahiro Suzuki, Yutaka Matsuo"
+      venue: "World Modeling Workshop"
+      year: 2026
+    - title: "When Object-Centric World Models Meet Policy Learning: From Pixels to Policies, and Where It Breaks"
+      authors: "Stefano Ferraro, **Akihiro Nakano**, Masahiro Suzuki, Yutaka Matsuo"
+      venue: "World Modeling Workshop"
+      year: 2026
+      links:
+        - name: "arXiv"
+          url: "https://arxiv.org/abs/2511.06136"
+    - title: "Masked Generative Priors Improve World Models Sequence Modelling Capabilities"
+      authors: "Cristian Meo, Mircea Lică, Zarif Ikram, **Akihiro Nakano**, Vedant Shah, Aniket Didolkar, Dianbo Liu, Anirudh Goyal, Justin Dauwels"
+      venue: "ICLR Workshop on World Models: Understanding, Modelling and Scaling"
+      year: 2025
+      links:
+        - name: "OpenReview"
+          url: "https://openreview.net/forum?id=vRdn74Jkqp"
+        - name: "arXiv"
+          url: "https://arxiv.org/abs/2410.07836"
+    - title: "Faster Slot Decoding using Masked Transformer"
+      authors: "**Akihiro Nakano**, Masahiro Suzuki, Yutaka Matsuo"
+      venue: "NeurIPS Workshop on Compositional Learning"
+      year: 2024
+      links:
+        - name: "OpenReview"
+          url: "https://openreview.net/forum?id=n30V6R7Nuf"
+    - title: "Object-Centric Temporal Consistency via Conditional Autoregressive Inductive Biases"
+      authors: "Cristian Meo\\*, **Akihiro Nakano**\\*, Mircea Lică, Aniket Didolkar, Masahiro Suzuki, Anirudh Goyal, Mengmi Zhang, Justin Dauwels, Yutaka Matsuo, Yoshua Bengio"
+      venue: "NeurIPS Workshop on Compositional Learning"
+      year: 2024
+      note: "\\* Equal contribution"
+      links:
+        - name: "OpenReview"
+          url: "https://openreview.net/forum?id=og4DlYK4Vy"
+        - name: "arXiv"
+          url: "https://arxiv.org/abs/2410.15728"
+
+- section: "Domestic Conferences (Japanese)"
+  items:
+    - title: "物体中心表現を用いたモデルベース強化学習の頑健性評価"
+      authors: "**中野聡大**, 鈴木雅大, 松尾豊"
+      venue: "人工知能学会全国大会 (JSAI)"
+      year: 2025
+      links:
+        - name: "PDF"
+          url: "https://www.jstage.jst.go.jp/article/pjsai/JSAI2025/0/JSAI2025_1B4OS41b05/_pdf/-char/ja"
+    - title: "物体中心表現を用いた世界モデルの獲得"
+      authors: "**中野聡大**, 鈴木雅大, 松尾豊"
+      venue: "人工知能学会全国大会 (JSAI)"
+      year: 2024
+      links:
+        - name: "PDF"
+          url: "https://www.jstage.jst.go.jp/article/pjsai/JSAI2024/0/JSAI2024_2O6OS16a04/_pdf"
+    - title: "物体中心表現の学習における内的報酬の検討"
+      authors: "**中野聡大**, 鈴木雅大, 松尾豊"
+      venue: "人工知能学会全国大会 (JSAI)"
+      year: 2023
+      links:
+        - name: "PDF"
+          url: "https://www.jstage.jst.go.jp/article/pjsai/JSAI2023/0/JSAI2023_1G5OS21b01/_pdf/-char/ja"
+    - title: "大規模言語モデルを補助に用いた言語指示ロボット学習のタスク汎用性の分析"
+      authors: "髙城頌太, 谷口尚平, **中野聡大**, 岩澤有祐, 鈴木雅大, 熊谷亘, 谷中瞳, 松尾豊"
+      venue: "人工知能学会全国大会 (JSAI)"
+      year: 2023
+      links:
+        - name: "PDF"
+          url: "https://www.jstage.jst.go.jp/article/pjsai/JSAI2023/0/JSAI2023_2O1GS805/_pdf"
+    - title: "大規模言語モデルの活用による効率的なロボット制御の学習"
+      authors: "髙城頌太, 谷口尚平, **中野聡大**, 上田亮, 谷中瞳, 松尾豊"
+      venue: "言語処理学会年次大会 (NLP)"
+      year: 2023
+      links:
+        - name: "PDF"
+          url: "https://www.anlp.jp/proceedings/annual_meeting/2023/pdf_dir/H10-2.pdf"
+    - title: "物体中心学習における時間方向のもつれを解いたエンティティ表現の獲得"
+      authors: "**中野聡大**, 鈴木雅大, 松尾豊"
+      venue: "人工知能学会全国大会 (JSAI)"
+      year: 2022
+      links:
+        - name: "PDF"
+          url: "https://www.jstage.jst.go.jp/article/pjsai/JSAI2022/0/JSAI2022_2M6OS19d02/_pdf/-char/ja"
+
+- section: "Preprints"
+  items:
+    - title: "Cross-Task Consistency Learning Framework for Multi-Task Learning"
+      authors: "**Akihiro Nakano**, Shi Chen, Kazuyuki Demachi"
+      venue: "arXiv:2111.14122"
+      year: 2021
+      links:
+        - name: "arXiv"
+          url: "https://arxiv.org/abs/2111.14122"
