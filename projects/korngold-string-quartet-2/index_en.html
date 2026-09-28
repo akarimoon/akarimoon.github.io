@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>String Quartet No. 2 — Korngold Op. 26 — Harmonic analysis</title>
+<meta name="description" content="A beat-by-beat harmonic analysis of Erich Wolfgang Korngold’s String Quartet No. 2 in E♭ major, Op. 26: one page per movement, with themes, paragraphs and phrases.">
+<style>
+:root{--paper:#efe4cd;--ink:#141414;--mustard:#e3a72b;--coral:#d8522c;--teal:#1f7280;--olive:#7c8a3d;--cream:#f6efdd;--grey:#b9b09a;
+--display:"Futura-CondensedExtraBold","Futura Condensed ExtraBold","Futura","Helvetica Neue","Arial Black",Impact,sans-serif;
+--sans:"Helvetica Neue",Helvetica,"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic","Noto Sans JP",Arial,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-snap-type:y proximity}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.5;overflow-x:hidden}
+a{color:inherit}a:focus-visible{outline:3px solid var(--ink);outline-offset:4px}
+.grain{position:fixed;inset:0;pointer-events:none;z-index:30;opacity:.07;mix-blend-mode:multiply;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .9 0'/></filter><rect width='160' height='160' filter='url(%23n)'/></svg>")}
+.progress{position:fixed;top:0;left:0;height:6px;width:0;background:var(--ink);z-index:40}
+/* shapes */
+.shape{position:absolute;pointer-events:none;will-change:transform}
+.sun{width:38vw;height:38vw;max-width:520px;max-height:520px;border-radius:50%;background:var(--mustard);top:-8vw;right:-6vw;animation:drift 14s ease-in-out infinite alternate}
+.half{width:26vw;height:13vw;max-width:360px;max-height:180px;background:var(--coral);border-radius:0 0 180px 180px;left:6vw;top:14vh;animation:spin 40s linear infinite;transform-origin:50% 0}
+.cut{width:44vw;height:30vw;background:var(--teal);left:-10vw;bottom:-6vw;clip-path:polygon(0 30%,55% 0,100% 40%,78% 100%,20% 88%);animation:drift 18s ease-in-out infinite alternate-reverse}
+.dotsfield{width:34vw;height:22vw;right:8vw;bottom:8vh;background-image:radial-gradient(var(--ink) 1.3px,transparent 1.5px);background-size:9px 9px;opacity:.55;clip-path:polygon(0 0,100% 12%,88% 100%,10% 90%)}
+.stripes{width:14vw;height:60vh;left:52vw;top:-10vh;background:repeating-linear-gradient(90deg,var(--ink) 0 6px,transparent 6px 22px);opacity:.9;transform:rotate(12deg)}
+.zig{position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:none}
+.zig path{fill:none;stroke:var(--ink);stroke-width:5;stroke-linejoin:miter;stroke-linecap:square}
+@keyframes drift{from{transform:translate(0,0) rotate(0)}to{transform:translate(2.5vw,3vh) rotate(6deg)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+/* hero */
+.hero{min-height:100svh;position:relative;overflow:hidden;display:grid;align-items:end;padding:10svh 7vw 12svh;scroll-snap-align:start}
+.hero-inner{position:relative;max-width:1100px}
+.kicker{font:700 clamp(.8rem,1.4vw,1.1rem)/1.3 var(--sans);letter-spacing:.32em;text-transform:uppercase;margin:0 0 1.2rem;opacity:0;animation:rise .8s .1s forwards}
+.hero h1{font-family:var(--display);font-weight:900;font-stretch:condensed;text-transform:uppercase;font-size:clamp(4.2rem,15.5vw,15rem);line-height:.86;letter-spacing:-.015em;margin:0 0 .18em}
+.hero h1 .w{display:block;overflow:hidden}.hero h1 .w span{display:inline-block;opacity:0;transform:translateY(105%);animation:cut .9s cubic-bezier(.2,.8,.2,1) forwards}
+.hero h1 .no{color:var(--coral)}
+.op{font:800 clamp(1.3rem,3.2vw,2.6rem)/1.2 var(--sans);letter-spacing:.02em;margin:0 0 .6rem;opacity:0;animation:rise .8s 1.25s forwards}
+.sub{font:500 clamp(.95rem,1.5vw,1.15rem)/1.5 var(--sans);letter-spacing:.06em;margin:0;opacity:0;animation:rise .8s 1.55s forwards}
+.cue{position:absolute;right:7vw;bottom:5svh;font:700 .8rem var(--sans);letter-spacing:.3em;text-decoration:none;display:flex;align-items:center;gap:.8rem;opacity:0;animation:rise .8s 2s forwards}
+.cue i{width:46px;height:46px;border:3px solid var(--ink);border-radius:50%;display:grid;place-items:center}.cue i:after{content:"";width:10px;height:10px;border-right:3px solid var(--ink);border-bottom:3px solid var(--ink);transform:rotate(45deg) translate(-2px,-2px);animation:bob 1.5s ease-in-out infinite}
+@keyframes rise{to{opacity:1;transform:none}}@keyframes cut{to{opacity:1;transform:none}}
+@keyframes bob{0%,100%{transform:rotate(45deg) translate(-2px,-2px)}50%{transform:rotate(45deg) translate(2px,2px)}}
+/* movements */
+.mvt{min-height:100svh;position:relative;overflow:hidden;display:grid;align-items:center;padding:12svh 7vw;scroll-snap-align:start;border-top:6px solid var(--ink)}
+.mvt .num{position:absolute;left:4vw;top:50%;transform:translateY(-50%);font-family:"Bodoni 72","Bodoni 72 Oldstyle",Didot,"Bodoni MT","Times New Roman",serif;font-weight:700;font-size:clamp(14rem,42vw,38rem);line-height:.8;letter-spacing:-.02em;pointer-events:none;user-select:none;will-change:transform}
+.mvt .inner{position:relative;margin-left:auto;width:min(560px,100%);opacity:0;transform:translateY(40px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.8,.2,1)}
+.mvt.in .inner{opacity:1;transform:none}
+.mvt .label{font:700 .85rem/1.3 var(--sans);letter-spacing:.32em;text-transform:uppercase;margin:0 0 .8rem}
+.mvt .key{font-family:var(--display);font-weight:900;font-stretch:condensed;font-size:clamp(2.6rem,7vw,5.6rem);line-height:.95;letter-spacing:-.01em;margin:0 0 .5rem}
+.mvt h2{font:700 clamp(1.15rem,2.2vw,1.55rem)/1.55 var(--sans);margin:0 0 1.6rem;max-width:30em}.mvt h2 .form{display:block;font:500 .78em/1.5 var(--sans);letter-spacing:.02em;margin-top:.15em;opacity:.85}
+.btn{display:inline-flex;align-items:center;gap:.8rem;padding:.95rem 1.8rem;border:3px solid currentColor;font:800 1rem var(--sans);letter-spacing:.08em;text-decoration:none;transition:transform .2s,background .2s,color .2s}
+.btn:hover{transform:translate(-4px,-4px);box-shadow:6px 6px 0 currentColor}
+.btn i{width:.7em;height:.7em;border-top:3px solid currentColor;border-right:3px solid currentColor;transform:rotate(45deg)}
+/* colour fields */
+#mvt1{background:var(--mustard)}#mvt1 .num{color:var(--ink);text-shadow:14px 10px 0 var(--coral)}#mvt1 .btn{color:var(--ink)}
+#mvt2,#mvt3{background:var(--paper)}#mvt2 .num,#mvt3 .num{color:transparent;-webkit-text-stroke:3px var(--grey)}#mvt2 .key,#mvt3 .key{color:var(--grey)}#mvt2 h2,#mvt3 h2{color:#6f6a5c}
+#mvt4{background:var(--coral);color:var(--cream)}#mvt4 .num{color:var(--cream);text-shadow:14px 10px 0 var(--ink)}#mvt4 .btn{color:var(--cream)}
+#mvt4 .label,#mvt4 .key{color:var(--cream)}
+.mvt .deco{position:absolute;pointer-events:none}
+#mvt1 .deco.a{width:18vw;height:18vw;border-radius:50%;background:var(--teal);right:-4vw;top:-6vw}#mvt1 .deco.b{width:30vw;height:8px;background:var(--ink);right:0;bottom:16vh;transform:rotate(-8deg)}
+#mvt2 .deco.a,#mvt3 .deco.a{width:22vw;height:22vw;border-radius:50%;border:5px solid var(--grey);right:6vw;top:10vh}
+#mvt4 .deco.a{width:26vw;height:13vw;background:var(--mustard);border-radius:180px 180px 0 0;right:-2vw;bottom:-1px}#mvt4 .deco.b{width:12vw;height:12vw;background:var(--ink);left:60vw;top:8vh;clip-path:polygon(50% 0,100% 100%,0 100%)}
+.badge{display:inline-block;padding:.5rem 1rem;border:3px solid var(--grey);color:#6f6a5c;font:800 .85rem var(--sans);letter-spacing:.25em}
+
+/* appendix */
+.appendix{min-height:100svh;position:relative;overflow:hidden;display:grid;align-items:center;padding:12svh 7vw;background:var(--ink);color:var(--cream);scroll-snap-align:start}
+.appendix .inner{position:relative;max-width:760px;opacity:0;transform:translateY(40px);transition:opacity .8s,transform .8s}.appendix.in .inner{opacity:1;transform:none}
+.appendix .label{font:700 .85rem var(--sans);letter-spacing:.32em;color:var(--mustard);margin:0 0 .8rem}
+.appendix h2{font-family:var(--display);font-weight:900;font-stretch:condensed;font-size:clamp(2.4rem,7vw,5.6rem);line-height:.95;margin:0 0 .4em;text-transform:uppercase}
+.appendix p{font:500 clamp(1rem,1.5vw,1.2rem)/1.7 var(--sans);color:#d9d2c0;max-width:34em;margin:0 0 1.6rem}
+.appendix .btn{color:var(--mustard)}.appendix .deco{position:absolute;right:-6vw;top:-10vh;width:40vw;height:40vw;border-radius:50%;background:var(--teal);opacity:.9}
+.top{position:fixed;left:1.4rem;bottom:1.4rem;z-index:40;font:800 .75rem var(--sans);letter-spacing:.2em;text-decoration:none;background:var(--paper);border:3px solid var(--ink);padding:.5rem .8rem;opacity:0;transition:opacity .3s}.top.show{opacity:1}
+.dots{position:fixed;right:1.4rem;top:50%;transform:translateY(-50%);display:grid;gap:.9rem;z-index:40}
+.dots a{width:12px;height:12px;border:3px solid var(--ink);background:transparent;display:block;transition:background .3s,transform .3s,border-color .3s}.dots a.active{background:var(--ink);transform:rotate(45deg) scale(1.15)}body.on-dark .dots a{border-color:var(--cream)}body.on-dark .dots a.active{background:var(--cream)}
+@media(max-width:760px){.dots{display:none}.hero{padding:12svh 6vw 16svh}.mvt{padding:10svh 6vw}.mvt .num{left:auto;right:-6vw;top:auto;bottom:4svh;transform:none;font-size:50vw}.mvt .inner{margin-left:0;width:100%}.cue{right:6vw}.sun{width:60vw;height:60vw;top:-18vw;right:-18vw}.cut{width:70vw;height:44vw}.stripes{display:none}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.kicker,.hero h1 .w span,.op,.sub,.cue,.mvt .inner,.appendix .inner{opacity:1!important;transform:none!important}html{scroll-behavior:auto;scroll-snap-type:none}}
+.langsw{position:fixed;right:1.4rem;top:1.2rem;z-index:40;font:800 .75rem var(--sans);letter-spacing:.2em;text-decoration:none;color:var(--ink);background:var(--paper);border:3px solid var(--ink);padding:.5rem .8rem;mix-blend-mode:normal}.langsw:hover{background:var(--ink);color:var(--cream)}</style></head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<nav class="dots" aria-label="Page navigation"><a href="#top" data-for="top" aria-label="Top"></a><a href="#mvt1" data-for="mvt1" aria-label="I"></a><a href="#mvt2" data-for="mvt2" aria-label="II"></a><a href="#mvt3" data-for="mvt3" aria-label="III"></a><a href="#mvt4" data-for="mvt4" aria-label="IV"></a><a href="#appendix" data-for="appendix" aria-label="Appendix"></a></nav>
+
+<header class="hero" id="top">
+<div class="shape sun" data-speed="-.12" aria-hidden="true"></div>
+<div class="shape half" aria-hidden="true"></div>
+<div class="shape stripes" data-speed=".08" aria-hidden="true"></div>
+<div class="shape cut" data-speed=".16" aria-hidden="true"></div>
+<div class="shape dotsfield" data-speed="-.06" aria-hidden="true"></div>
+<svg class="zig" viewBox="0 0 1000 600" preserveAspectRatio="none" aria-hidden="true"><path d="M470 110 L560 40 L640 170 L730 60 L820 210 L900 90 L1010 180"/></svg>
+<div class="hero-inner">
+<p class="kicker">Erich Wolfgang Korngold</p>
+<h1><span class="w"><span style="animation-delay:.25s">String</span></span><span class="w"><span style="animation-delay:.45s">Quartet</span></span><span class="w"><span class="no" style="animation-delay:.7s">No. 2</span></span></h1>
+<p class="op">Op. 26 · E♭ major</p>
+<p class="sub">Beat-by-beat harmonic studies, one page per movement</p>
+</div>
+<a class="cue" href="#mvt1">SCROLL <i></i></a>
+</header>
+
+<main>
+
+<section class="mvt" id="mvt1"><div class="deco a" data-speed="-.1" aria-hidden="true"></div><div class="deco b" aria-hidden="true"></div><div class="num" aria-hidden="true">I</div>
+<div class="inner"><p class="label">Movement I</p><p class="key">E♭ major</p><h2>Allegro<span class="form">Sonata form</span></h2><a class="btn" href="mvt1/index_en.html">Read the analysis <i></i></a></div></section>
+
+<section class="mvt" id="mvt2"><div class="deco a" data-speed="-.08" aria-hidden="true"></div><div class="num" aria-hidden="true">II</div>
+<div class="inner"><p class="label">Movement II</p><p class="key">—</p><h2>Not yet analysed</h2><span class="badge">COMING SOON</span></div></section>
+
+<section class="mvt" id="mvt3"><div class="deco a" data-speed="-.08" aria-hidden="true"></div><div class="num" aria-hidden="true">III</div>
+<div class="inner"><p class="label">Movement III</p><p class="key">—</p><h2>Not yet analysed</h2><span class="badge">COMING SOON</span></div></section>
+
+<section class="mvt" id="mvt4"><div class="deco a" aria-hidden="true"></div><div class="deco b" data-speed="-.12" aria-hidden="true"></div><div class="num" aria-hidden="true">IV</div>
+<div class="inner"><p class="label">Movement IV</p><p class="key">E♭ major</p><h2>Waltz (Finale)<span class="form">Sonata rondo in waltz time</span></h2><a class="btn" href="mvt4/index_en.html">Read the analysis <i></i></a></div></section>
+
+<section class="appendix" id="appendix"><div class="deco" data-speed="-.1" aria-hidden="true"></div>
+<div class="inner"><p class="label">Appendix</p><h2>Method, sources, notes</h2><p>How the score was transcribed and analysed, the sources used, the notation conventions and the limits of the readings, kept apart from the analysis pages.</p><a class="btn" href="appendix_en.html">Read the appendix <i></i></a></div></section>
+</main>
+<a class="top" id="totop" href="#top">TOP</a>
+<a class="langsw" href="index.html" title="日本語版" hreflang="ja">日本語</a>
+<script>
+(() => {
+  const sw=document.querySelector(".langsw");if(sw)sw.addEventListener("click",()=>{sw.href=sw.getAttribute("href").split("#")[0]+location.hash;});
+  const progress = document.getElementById('progress');
+  const sections = [...document.querySelectorAll('.hero, .mvt, .appendix')];
+  const dots = [...document.querySelectorAll('.dots a')];
+  const nums = [...document.querySelectorAll('.mvt .num')];
+  const movers = [...document.querySelectorAll('[data-speed]')];
+  const totop = document.getElementById('totop');
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const io = new IntersectionObserver(entries => {
+    for (const e of entries) if (e.isIntersecting) { e.target.classList.add('in'); dots.forEach(d => d.classList.toggle('active', d.dataset.for === e.target.id)); }
+  }, {threshold: 0.35});
+  sections.forEach(s => io.observe(s));
+  let ticking = false;
+  function onScroll() {
+    if (ticking) return; ticking = true;
+    requestAnimationFrame(() => {
+      const max = document.documentElement.scrollHeight - innerHeight;
+      progress.style.width = (max > 0 ? (scrollY / max) * 100 : 0) + '%';
+      totop.classList.toggle('show', scrollY > innerHeight * 0.8);
+      for (const sec of sections) {
+        const r = sec.getBoundingClientRect();
+        if (r.top < innerHeight * 0.75 && r.bottom > innerHeight * 0.25) { sec.classList.add('in'); dots.forEach(d => d.classList.toggle('active', d.dataset.for === sec.id)); document.body.classList.toggle('on-dark', sec.classList.contains('appendix') && r.top < innerHeight * 0.5); }
+      }
+      if (!reduce) {
+        for (const n of nums) {
+          const r = n.parentElement.getBoundingClientRect();
+          const t = (r.top + r.height / 2 - innerHeight / 2) / innerHeight;
+          n.style.transform = innerWidth > 760 ? `translateY(calc(-50% + ${(-t * 14).toFixed(2)}vh))` : `translateY(${(-t * 8).toFixed(2)}vh)`;
+        }
+        for (const m of movers) {
+          const r = m.parentElement.getBoundingClientRect();
+          const t = (r.top + r.height / 2 - innerHeight / 2) / innerHeight;
+          m.style.translate = `0 ${(t * parseFloat(m.dataset.speed) * innerHeight).toFixed(1)}px`;
+        }
+      }
+      ticking = false;
+    });
+  }
+  addEventListener('scroll', onScroll, {passive: true}); addEventListener('resize', onScroll);
+  addEventListener('load', () => setTimeout(onScroll, 50)); addEventListener('hashchange', () => setTimeout(onScroll, 50)); onScroll();
+  addEventListener('keydown', ev => {
+    if (ev.key !== 'ArrowDown' && ev.key !== 'ArrowUp') return;
+    const i = sections.findIndex(s => s.getBoundingClientRect().top > 2);
+    const cur = ev.key === 'ArrowDown' ? (i === -1 ? sections.length - 1 : i) : Math.max(0, (i === -1 ? sections.length : i) - 2);
+    sections[cur].scrollIntoView({behavior: reduce ? 'auto' : 'smooth'}); ev.preventDefault();
+  });
+})();
+</script>
+</body></html>

@@ -1,9 +1,9 @@
 # main links links
 main:
-  # Archived: projects and blog posts now live in _archive/ and are not built.
-  # - title: "Projects"
-  #   url: /projects/
+  - title: "Projects"
+    url: /projects/
 
+  # Archived: the old projects and blog posts live in _archive/ and are not built.
   # - title: "Blog Posts"
   #   url: /posts/
 

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Appendix — String Quartet No. 2</title>
+<meta name="description" content="コルンゴルト《弦楽四重奏曲第2番》Op. 26の和声分析について、転写と分析の手順、用いた資料、表記の規約、限界をまとめた付録。">
+<style>
+:root{--paper:#efe4cd;--cream:#f7f1e1;--ink:#141414;--mustard:#e3a72b;--coral:#d8522c;--teal:#1f7280;--muted:#5d5a50;--grey:#b9b09a;--line:#cdbfa3;
+--display:"Futura-CondensedExtraBold","Futura Condensed ExtraBold","Futura","Helvetica Neue","Arial Black",Impact,sans-serif;
+--sans:"Helvetica Neue",Helvetica,"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic","Noto Sans JP",Arial,sans-serif;
+--serif:"Hiragino Mincho ProN","Hiragino Mincho Pro","Yu Mincho","YuMincho","Noto Serif JP",Georgia,serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--serif);line-height:1.8;font-size:16.5px}
+.wrap{max-width:1180px;margin:auto;padding:0 32px}
+.top{border-bottom:6px solid var(--ink);background:var(--paper)}.top .wrap{display:flex;justify-content:space-between;align-items:center;padding:14px 32px;font:700 .8rem var(--sans);letter-spacing:.22em;text-transform:uppercase}.top a{color:var(--ink);text-decoration:none}.top a:hover{color:var(--coral)}
+.mvnav{display:flex;gap:.9rem}.mvnav span,.mvnav a{padding:.15rem .45rem;border:2px solid transparent}.mvnav a:hover{border-color:var(--ink)}.mvnav .off{color:var(--grey)}.top .cur{background:var(--ink);color:var(--cream);padding:.15rem .45rem}.top .right{display:flex;gap:1.2rem;align-items:center}.top .lang{border:2px solid var(--ink);padding:.15rem .5rem;letter-spacing:.12em}.top .lang:hover{background:var(--ink);color:var(--cream)}
+.masthead{position:relative;overflow:hidden;padding:64px 0 48px;border-bottom:6px solid var(--ink)}.masthead .wrap{position:relative}
+.masthead .deco{position:absolute;pointer-events:none}.masthead .deco.a{width:34vw;height:34vw;max-width:460px;max-height:460px;border-radius:50%;background:var(--teal);right:-8vw;top:-16vw}.masthead .deco.b{width:22vw;height:11vw;max-width:300px;max-height:150px;background:var(--coral);border-radius:0 0 200px 200px;right:14vw;top:-2px}.masthead .deco.c{width:30vw;height:18vw;left:-8vw;bottom:-10vw;background-image:radial-gradient(var(--ink) 1.3px,transparent 1.5px);background-size:9px 9px;opacity:.35;clip-path:polygon(0 0,100% 12%,88% 100%,10% 90%)}
+.masthead .eyebrow{font:700 .8rem var(--sans);letter-spacing:.3em;text-transform:uppercase;margin:0 0 1rem}
+.masthead h1{font-family:var(--display);font-weight:900;font-stretch:condensed;text-transform:uppercase;font-size:clamp(3rem,9vw,7.6rem);line-height:1.02;letter-spacing:-.01em;margin:0 0 .2em}
+.masthead .ja{font:700 clamp(1rem,1.8vw,1.3rem) var(--sans);margin:0 0 .8rem}.masthead .lead{max-width:40em;font-size:1.05rem;margin:0}
+main{padding:10px 0 20px}.reading{max-width:62em}
+.sec{margin:52px 0 0;border-top:3px solid var(--ink);padding-top:16px}.sec .eyebrow{display:block;font:700 .78rem var(--sans);letter-spacing:.3em;text-transform:uppercase;color:var(--coral);margin:0 0 .3rem}.sec h2{font:800 1.45rem/1.4 var(--sans);margin:0 0 .9rem}
+p{margin:0 0 1rem}ul{padding-left:1.3em;margin:0 0 1rem}li{margin:.45rem 0}
+.card{background:var(--cream);border:2px solid var(--ink);box-shadow:8px 8px 0 var(--mustard);padding:6px 18px;margin:1rem 0 1.6rem}
+table{border-collapse:collapse;width:100%;font-family:var(--sans);font-size:.92rem;margin:.4rem 0}th,td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:top}tr:last-child td{border-bottom:0}th{font:800 .72rem var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.note{background:var(--paper);border:2px solid var(--ink);border-left:10px solid var(--coral);padding:12px 18px;margin:1rem 0 1.4rem;font-family:var(--sans);font-size:.95rem}
+.files{font-family:var(--sans);font-size:.95rem}.files code{font:600 .88em/1.6 ui-monospace,Menlo,monospace}
+footer{margin-top:60px;border-top:6px solid var(--ink);padding:26px 0 46px;font:.82rem/1.7 var(--sans);color:var(--muted)}
+@media(max-width:700px){.wrap{padding:0 16px}.top .wrap{padding:12px 16px;flex-wrap:wrap;row-gap:10px;letter-spacing:.16em}.top .wrap>a:first-child{flex:1 0 100%}.top .right{gap:.9rem}.masthead{padding:40px 0 30px}.card{padding:4px 12px;box-shadow:5px 5px 0 var(--mustard)}.mvnav{gap:.4rem}}
+</style></head>
+<body>
+<div class="top"><div class="wrap"><a href="index.html">← String Quartet No. 2</a><nav class="mvnav" aria-label="楽章"><a href="mvt1/index.html">I</a><span class="off" title="未着手">II</span><span class="off" title="未着手">III</span><a href="mvt4/index.html">IV</a></nav><span class="right"><span class="cur">Appendix</span><a class="lang" href="appendix_en.html" title="English edition" hreflang="en">EN</a></span></div></div>
+<header class="masthead"><div class="deco a" aria-hidden="true"></div><div class="deco b" aria-hidden="true"></div><div class="deco c" aria-hidden="true"></div>
+<div class="wrap"><p class="eyebrow">Method · Sources · Notes</p><h1>Appendix</h1><p class="ja">付録：方法、資料、注記</p>
+<p class="lead">コルンゴルト《弦楽四重奏曲第2番》Op. 26の和声分析について、転写と分析の手順、用いた資料、表記の規約、読みの限界をまとめる。各楽章の分析ページは、拍ごとの読みと主題・パラグラフ・フレーズの階層だけを載せている。</p></div></header>
+<main class="wrap"><div class="reading">
+
+<section class="sec"><span class="eyebrow">What this is</span><h2>この分析は何か</h2>
+<p>各楽章のページは、楽譜に実際に鳴っている音を四分音符1拍ごとに記録し、その拍の和音、和声機能、調的文脈を読んだものである。拍の読みは、フレーズ、パラグラフ、主題ブロックの3段の階層にまとめてある。和音ラベルは鳴っている音と最低音から付け、機能の読みや形式の区分は筆者の分析である。第1楽章と第4楽章が完成しており、第2・第3楽章は転写と分析がまだである。</p></section>
+
+<section class="sec"><span class="eyebrow">Sources</span><h2>資料</h2>
+<p>一次資料は、IMSLP所収のスキャン譜（IMSLP 589869。第1楽章は2部に分かれた8ページ、第4楽章は13ページ）と、それから起こしたMuseScoreの転写だけである。録音解説や楽曲分析の文献などの二次資料は用いていない。</p>
+</section>
+
+<section class="sec"><span class="eyebrow">Transcription</span><h2>転写の方法と限界</h2>
+<p>第4楽章の転写は、スキャン譜をAudiveris 5.11で光学認識したうえで、全365小節を400dpiの切り出し画像と照合して修正した。既知の誤りはないが、判定を保留した点がある。チェロの第186〜187小節はスラーの弧が片側にしかなく、タイとして入力した。第2ヴァイオリンの第11小節と第129小節の「arco」は演奏上の補いで、和声には影響しない。第248小節はアラ・ブレーヴェ記号を2/2拍子として入力した。</p>
+<p>第1楽章の転写は、当初、印刷譜と12箇所で異なっていた（第85小節のヴィオラの音部記号、第96・97・101・105・110〜112小節、第10〜11小節のチェロの臨時記号、第118〜119小節のタイ）。いずれもスキャンで確認したうえで2026年9月28日に楽譜を修正し、拍の表と和音ラベルはその修正後の音から再生成した。</p>
+<div class="note">拍の表に出ている音は、どちらの楽章も転写の音である。転写と印刷譜の間に、既知の相違はもうない。</div></section>
+
+<section class="sec"><span class="eyebrow">Method</span><h2>分析の方法</h2>
+<p>拍ごとの音は、転写のMusicXMLから四分音符1拍ごとに自動で取り出し、鳴っている音とその最低音を、響きが変わる瞬間ごとに記録した（第1楽章は489拍、第4楽章は1095拍）。和音ラベルは各拍の音集合と最低音から付け、すべてのラベルについて、名指した音が実際に鳴っているかと最低音が合っているかを機械的に照合した。さらに全拍を独立に再検査し、読みの根拠と別の読みを確かめた。フレーズと主題ブロックの区切りは、声部の入り、休符、終止、主題の反復から決めた。</p>
+<p>各拍の確信度（high・medium・low）は、分析データ（JSONとCSV）に残してある。別の読みが現実的なときは本文に「〜とも読める」と添え、根拠が2声しかない読みは確信度をmediumにしてある。</p></section>
+
+<section class="sec"><span class="eyebrow">Conventions</span><h2>表記の規約</h2>
+<ul>
+<li>拍は四分音符で数える。拍のちょうど半分は本文では「裏」、和音ラベルでは「+1/2」と書く。+1/4、+3/4、+1/3、+2/3は拍の中の位置を示す。</li>
+<li>和音ラベルは印刷譜の綴りに従う。スラッシュのあとは実際の最低音である。第3音省略・第5音省略は、その構成音が鳴っていないことを表す。ø7は半減七、°7は減七の和音である。</li>
+<li>ローマ数字は、そこに記した調的文脈を基準にする。V/xは副属和音、vii°7/xは導音和音を表す。調名は機能で綴り、記譜の綴りを括弧に添える（例：F♭長調（E長調と記譜））。</li>
+<li>音名の後の数字はオクターヴ番号で、C4が中央ハである。重音（2音）も音名をスラッシュでつなぐが、和音ラベルのスラッシュとは別で、下の音/上の音の順に書く。</li>
+</ul></section>
+
+
+
+<section class="sec"><span class="eyebrow">Notes</span><h2>注記</h2>
+<p>形式の区分（提示部・再現部、ソナタ・ロンドなど）、各拍の機能の読み、フレーズの境界は、筆者が転写を分析した結果であり、作曲者の意図や他の分析者の見解を代表するものではない。ラベルが名指す音はすべて鳴っている音に限ったが、機能の読みには別の可能性が残る箇所があり、その箇所は本文に記した。</p></section>
+
+</div></main>
+<footer><div class="wrap">Erich Wolfgang Korngold · String Quartet No. 2, Op. 26 · 和声分析 付録</div></footer>
+</body></html>
